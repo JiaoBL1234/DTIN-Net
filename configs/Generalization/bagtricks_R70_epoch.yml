@@ -1,0 +1,11 @@
+_BASE_: ../Base-bagtricks.yml
+
+DATASETS:
+  NAMES: ("Market1501","DukeMTMC","CUHK03","cuhkSYSU","CUHK02")
+  TESTS: ("GRID", "PRID", "VIPeR", "iLIDS",)
+  #TESTS: ("PRID",)
+OUTPUT_DIR: logs/Combine/bagtricks_R50
+
+SOLVER:
+    MAX_EPOCH: 70
+    STEPS: [30, 60 ]
